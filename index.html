@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tirtha Food Products</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #0e0e0e;
+      color: white;
+      line-height: 1.6;
+    }
+    header {
+      background-color: #1a1a1a;
+      padding: 1rem 2rem;
+      text-align: center;
+    }
+    header .logo {
+      max-width: 100px;
+      height: auto;
+      margin-bottom: 0.5rem;
+    }
+    header h1 {
+      font-size: 2.5rem;
+      color: #ffa500;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      background-color: #ff4200;
+      padding: 1rem;
+      flex-wrap: wrap;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .hero {
+      background: url('https://images.unsplash.com/photo-1604908811972-5406cc7ac663?auto=format&fit=crop&w=800&q=60') no-repeat center center/cover;
+      text-align: center;
+      padding: 6rem 2rem;
+    }
+    .hero h2 {
+      font-size: 3rem;
+      color: white;
+      text-shadow: 2px 2px 10px black;
+    }
+    .hero p {
+      font-size: 1.2rem;
+      margin: 1rem 0;
+    }
+    .btn {
+      background: #ffa500;
+      color: #fff;
+      padding: 0.8rem 1.5rem;
+      border-radius: 25px;
+      border: none;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+    .section {
+      padding: 3rem 2rem;
+      text-align: center;
+    }
+    .menu-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+      margin-top: 2rem;
+    }
+    .card {
+      background: #1e1e1e;
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 0 0 10px rgba(0,0,0,0.4);
+    }
+    .card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+    .card h3 {
+      margin: 1rem;
+      color: #ffa500;
+    }
+    .card p {
+      margin: 0 1rem 1rem;
+    }
+    .whatsapp-btn, .call-btn, .mail-btn {
+      display: inline-block;
+      background-color: #25d366;
+      color: white;
+      padding: 0.8rem 1.5rem;
+      border-radius: 25px;
+      font-size: 1rem;
+      font-weight: bold;
+      text-decoration: none;
+      margin-top: 1rem;
+      margin-right: 1rem;
+      transition: background-color 0.3s ease;
+    }
+    .call-btn {
+      background-color: #007bff;
+    }
+    .call-btn:hover {
+      background-color: #0066cc;
+    }
+    .mail-btn {
+      background-color: #ff5722;
+    }
+    .mail-btn:hover {
+      background-color: #e64a19;
+    }
+    .whatsapp-btn:hover {
+      background-color: #1ebe5d;
+    }
+    footer {
+      background-color: #1a1a1a;
+      text-align: center;
+      padding: 2rem;
+    }
+    footer p {
+      color: #ccc;
+    }
+    @media (max-width: 768px) {
+      .hero h2 {
+        font-size: 2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="Assets/logo2.png" alt="Tirtha Logo" class="logo">
+    <h1>Tirtha Food Products</h1>
+    <p>Authentic Indian Chowmin Manufacturar & Wholeseller</p>
+  </header>
+
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#menu">Menu</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section class="hero" id="home">
+    <h2>Welcome to Tirtha Food Products</h2>
+    <p>Enjoy the best Indian chowmin and pasta at affordable prices!</p>
+    <a href="https://wa.me/919933820467?text=Hi%20Tirtha%20Food%20Products%2C%20I%20want%20to%20order%20chowmin!" class="whatsapp-btn" target="_blank">Order on WhatsApp</a>
+    <a href="tel:+919933820467" class="call-btn">Call Us</a>
+    <a href="mailto:dastirthasankar@gmail.com" class="mail-btn">Email Us</a>
+  </section>
+
+  <section class="section" id="menu">
+    <h2>Our Best Products</h2>
+    <div class="menu-grid">
+      <div class="card">
+        <img src="Assets/chowmin2.jpg" alt="Chowmin"/>
+        <h3>Chowmin</h3>
+        <p>₹30 - Tasty, Healthy, and Soft Noodles.</p>
+      </div>
+      <div class="card">
+        <img src="Assets/pasta.avif" alt="pasta"/>
+        <h3>pasta</h3>
+        <p>₹20 - Juicy Pasta with Indian Flavour.</p>
+      </div>
+      <div class="card">
+        <img src="Assets/vermicelli1.webp" alt="vermicelli"/>
+        <h3>Vermicelli</h3>
+        <p>₹20 - Taste the Tradition in Every Bite.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="about">
+    <h2>About Us</h2>
+    <p>
+Welcome to Tirtha Food Products, a trusted name in quality food manufacturing based in Routara, West Bengal, India. We are proud manufacturers of chowmein, pasta, and vermicelli, crafted with care to deliver authentic taste and consistent quality to every household.
+
+At Tirtha, we combine traditional Indian culinary values with modern food processing techniques. Every product we make is prepared in a fully hygienic, FSSAI-certified facility, ensuring safety, freshness, and flavor in every bite.
+
+Whether it's the bold spice of street-style chowmein, the comfort of creamy pasta, or the sweetness of homemade seviyan — our products are designed to fit every mood, meal, and moment.
+
+Join thousands of satisfied customers who trust Tirtha Food Products for their daily dose of deliciousness.
+
+Made in Routara. Loved across India.
+    </p>
+  </section>
+
+  <section class="section" id="contact">
+    <h2>Contact Us</h2>
+    <p>📞 <a href="tel:+919933820467" style="color:#25d366">+91-98765-43210</a></p>
+    <p>📍 Rautara,West Bengal 721401, India</p>
+    <p>📧 <a href="mailto:dastirthasankar@gmail.com" style="color:#ff5722">tirthafoods@example.com</a></p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Tirtha Food Products | Designed by sanjay singha</p>
+  </footer>
+</body>
+</html>
